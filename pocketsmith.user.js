@@ -14,8 +14,12 @@ setInterval(() => { // Keepalive session
     httpRequest.send(null);
 }, 29*60*1000);
 
+const backgroundColor = '#b2d3d6';
 
 $('<style>').text(`
+body {background-color: ${backgroundColor}}
+body > .content::after {background-color: ${backgroundColor}}
+
 /* main menu (dashboard, transactions, calendar, ...) */
 .main-menu {height:34px}
 body > .sidebar, body > .sidebar ~ .breadcrumb {top: 34px}
@@ -35,13 +39,14 @@ body:not([position-fixed]) > .fixed.flight.toolbar {top:-75px}
 body.position-fixed        > .fixed.flight.toolbar {top:64px}
 
 /* page header (date, merchant, amount, ...) */
+.page-header {background-color: ${backgroundColor}}
 body:not([position-fixed]) > .page-header {top:-75px}
 body.position-fixed        > .page-header {top:96px}
 
 /* transaction list */
 body:not([position-fixed]) > .transactions_content .list-view-outer {top:-81px}
 body.position-fixed        > .transactions_content .list-view-outer {top:-140px}
-.list-view-outer {padding: 0}
+.list-view-outer {padding:0; background-color:${backgroundColor}}
 .list-view-outer:first {padding: 8px 0px 0px 0px}
 .transactions-table-footer {height:3.6rem; line-height:3rem}
 body.compact .transactions-table .row .cell {padding:0.5em 0}
@@ -50,11 +55,11 @@ body.compact .transactions-table .row .cell {padding:0.5em 0}
 `).appendTo($('body'));
 
 $('body').append($(`<div
-style="background-color:#fafafa;
-z-index:1;
-position:absolute;
-width:10000px;
-height:1000px;
-top:400px;
-left:280
+style="background-color: ${backgroundColor};
+z-index: 1;
+position: absolute;
+width: 10000px;
+height: 1000px;
+top: 400px;
+left: 280px;
 "></div>`));
