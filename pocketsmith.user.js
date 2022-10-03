@@ -48,3 +48,13 @@ body.compact .transactions-table .row .cell {padding:0.5em 0}
 .transactions-table-header .row .cell {line-height: 2.5rem}
 .transactions-table .row .cell .currency-code-info {display: inline-block !important}
 `).appendTo($('body'));
+
+$('body').append($(`<div
+style="background-color:#fafafa;
+z-index:1;
+position:absolute;
+width:10000px;
+height:1000px;
+top:400px;
+left:280
+"></div>`));
