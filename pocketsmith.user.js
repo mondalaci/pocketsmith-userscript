@@ -49,9 +49,10 @@ body.position-fixed        > .transactions_content .list-view-outer {top:-140px}
 .list-view-outer {padding:0; background-color:${backgroundColor}}
 .list-view-outer:first {padding: 8px 0px 0px 0px}
 .transactions-table-footer {height:3.6rem; line-height:3rem}
-body.compact .transactions-table .row .cell {padding:0.5em 0}
+body.compact .transactions-table .row .cell, body.compact .list-view .row .cell {padding:0.5em 6px}
 .transactions-table-header .row .cell {line-height: 2.5rem}
 .transactions-table .row .cell .currency-code-info {display: inline-block !important}
+
 `).appendTo($('body'));
 
 $('body').append($(`<div
