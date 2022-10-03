@@ -44,6 +44,7 @@ body:not([position-fixed]) > .page-header {top:-75px}
 body.position-fixed        > .page-header {top:96px}
 
 /* transaction list */
+
 body:not([position-fixed]) > .transactions_content .list-view-outer {top:-81px}
 body.position-fixed        > .transactions_content .list-view-outer {top:-140px}
 .list-view-outer {padding:0; background-color:${backgroundColor}}
@@ -59,7 +60,7 @@ $('body').append($(`<div
 style="background-color: ${backgroundColor};
 z-index: 1;
 position: absolute;
-width: 10000px;
+width: calc(100% - 280px);
 height: 1000px;
 top: 400px;
 left: 280px;
