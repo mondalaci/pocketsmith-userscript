@@ -56,12 +56,15 @@ body.compact .transactions-table .row .cell, body.compact .list-view .row .cell 
 
 `).appendTo($('body'));
 
-$('body').append($(`<div
-style="background-color: ${backgroundColor};
-z-index: 1;
-position: absolute;
-width: calc(100% - 280px);
-height: 1000px;
-top: 400px;
-left: 280px;
-"></div>`));
+// hide the bottom of the graph when scrolling
+if (window.location.pathname === '/transactions') {
+    $('body').append($(`<div
+        style="background-color: ${backgroundColor};
+        z-index: 1;
+        position: absolute;
+        width: calc(100% - 280px);
+        height: 1000px;
+        top: 400px;
+        left: 280px;
+    "></div>`));
+}
