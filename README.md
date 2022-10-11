@@ -2,7 +2,11 @@
 
 This userscript
 - Extends session timeout by keeping the session alive for as long as PocketSmith is opened. The default session timeout is merely half hour long.
-- Makes the user interface more compact, allowing for about twice as many transaction to fit on the screen than in compact mode.
+- Makes the user interface more compact, allowing for about twice as many transaction to fit on the screen than in compact mode:
+
+![Pocketsmith ultra-compact mode screenshot](/pocketsmith-ultracompact.png)
+
+
 
 ## Installation
 
