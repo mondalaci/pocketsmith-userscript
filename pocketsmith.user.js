@@ -34,7 +34,7 @@ body > .breadcrumb {height:30px}
 body > .graph-container {top:-34px; height:350px}
 
 /* toolbar (add, tools, export, ...) */
-body                       > .fixed.flight.toolbar {height:32px; padding:0.2rem}
+body                       > .fixed.flight.toolbar {height:32px; padding:0}
 body:not([position-fixed]) > .fixed.flight.toolbar {top:-75px}
 body.position-fixed        > .fixed.flight.toolbar {top:64px}
 
